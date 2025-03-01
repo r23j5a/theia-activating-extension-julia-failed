@@ -196,6 +196,14 @@ export const TerminalConfigSchema: PreferenceSchema = {
             default: [],
             deprecationMessage: shellArgsDeprecatedMessage(OS.Type.Linux),
         },
+        'terminal.integrated.commandsToSkipShell': {
+            type: 'array',
+            markdownDescription: nls.localize('theia/terminal/commandsToSkipShell', '!!! THIS IS A DUMMY DESCRIPTION FOR JULIA EXTENSION.'),
+            items: {
+                type: 'string'
+            },
+            default: []
+        },
         'terminal.integrated.confirmOnExit': {
             type: 'string',
             description: nls.localizeByDefault('Controls whether to confirm when the window closes if there are active terminal sessions.'),
